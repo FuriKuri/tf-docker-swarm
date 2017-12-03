@@ -3,7 +3,7 @@ provider "digitalocean" {
 }
 
 resource "digitalocean_droplet" "docker_swarm_node" {
-  count = 3
+  count = 5
   name = "${var.name_prefix}-docker-swarm-node-${count.index}"
   region = "${var.do_region}"
   size = "${var.do_droplet_size}"
