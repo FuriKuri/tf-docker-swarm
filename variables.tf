@@ -1,3 +1,8 @@
+variable "count" {
+  description = "Number of instances"
+  default = 2
+}
+
 variable "do_token" {
   description = "Your Digital Ocean API token"
 }
